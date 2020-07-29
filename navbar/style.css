@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: 	#00CDCD;
+    padding: 10px;
+   
+    
+}
+nav{
+    background-color: #009ACD;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 8px 10px 15px 1px rgba(33,128,130,1);
+        -moz-box-shadow: 8px 10px 15px 1px rgba(33,128,130,1);
+    box-shadow: 8px 10px 15px 1px rgba(33,128,130,1);
+        border-radius: 10px;
+        
+        position:relative;
+
+}
+.name{
+    font-family: 'Rowdies', cursive;
+    font-size: 30px;
+    display: block;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.icons i{
+    width: 70px;
+    height: 50px;
+    padding-top: 30px;
+    color: #00CDCD;
+    transition: .4s;
+    text-align: center;
+}
+.icons i:hover{
+    transform: scale(2);
+}
+
+/* main content */
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    padding: 10px;             
+}
+.left-column{
+    grid-area: left;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+      margin: 10px; 
+      text-align: center;
+}
+.login{
+    padding: 10px;
+    color: #009ACD;
+    font-size: 50px;
+    font-weight: bold;
+}
+.usn{
+    padding: 20px;
+}
+.password{
+    padding: 20px;
+}
+.usn input{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color:#00CDCD ;
+    outline: none;
+    font-size: 14pt;
+    
+}
+.password input  {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color:#00CDCD ;
+    outline: none;
+    font-size: 14pt;
+}
+.checkbox input{
+    padding-right: 80px;
+    
+}
+.checkbox{
+    padding-right: 100px;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+.right-column{
+    grid-area: right;
+}
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 10px 10px;
+    background-color: #009ACD ;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold; 
+    color: #00CDCD;
+    
+}
+.sign:hover{
+    transform: scale(.8);
+    
+}
+.sign{
+    padding: 10px;
+    padding-top: 50px;
+    transition: .4s;
+}
+.wrapper-backg{
+    background-image: url(/backg.jpg); 
+}
+.wrap{
+    display: flex;
+}
